@@ -29,6 +29,3 @@ characters2 = PassArray()
 characters3 = PassArray()
 
 print("Password: \n", *characters1, "-", *characters2, "-", *characters3)
-
-
-
