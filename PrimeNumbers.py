@@ -1,8 +1,10 @@
 # Emilia @ 5.7.23
 
+from math import sqrt
+
 def CheckPrime(Number):
         Prime = True
-        for i in range(2, Number):
+        for i in range(2, int(sqrt(Number))):
             if (Number % i) == 0:
                 Prime = False
                 break
@@ -13,5 +15,5 @@ def CheckPrime(Number):
             #print(Number, "is not a prime number")
     
 # Start   
-for i in range(2, 1000 + 1):
+for i in range(2, 10000000 + 1):
     CheckPrime(i)
